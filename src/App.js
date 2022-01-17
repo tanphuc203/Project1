@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Index from "./component/login/index";
+import Repassword from "./component/fpass/index";
+import { Link, Route, Router, Routes } from "react-router-dom";
+import Resetpass from "./component/resetpassword/index";
+import Nologin from "./component/nologin/index";
+import Infor from "./component/list/index";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div className="app">
+      <Routes>
+          <Route path="/" element={<Index />} />
+          <Route path="/Repassword" element={<Repassword />} />
+          <Route path="/Resetpass" element={<Resetpass />} />
+          <Route path="/Nologin" element={<Nologin />}/>
+          <Route path="/Infor" element={<Infor />} />
+      </Routes>
+    </div>        
   );
 }
 
