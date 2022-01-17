@@ -13,6 +13,8 @@ function App() {
           <Route path="/Resetpass" element={<Resetpass />} />
           <Route path="/Nologin" element={<Nologin />}/>
           <Route path="/Infor" element={<Infor />} />
+          
+          {/* //test */}
       </Routes>
     </div>        
   );
